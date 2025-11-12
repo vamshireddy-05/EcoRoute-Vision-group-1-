@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoRoute Vision</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>EcoRoute Vision</h1>
+    <p>Intelligent Carbon Management & Sustainability Dashboard for Eco-Friendly Logistics</p>
+    <div class="buttons">
+      <button class="btn primary">Start Planning Routes →</button>
+      <button class="btn secondary">View Dashboard</button>
+    </div>
+    <div class="stats">
+      <div><h2>25%</h2><p>Emission Reduction</p></div>
+      <div><h2>10K+</h2><p>Routes Optimized</p></div>
+      <div><h2>50+</h2><p>Companies Trust</p></div>
+      <div><h2>24/7</h2><p>AI Insights</p></div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Powerful Features for Sustainable Logistics</h2>
+    <p>Everything you need to track, analyze, and reduce your carbon footprint</p>
+    <div class="feature-cards">
+      <div class="card">
+        <div class="icon green">🔗</div>
+        <h3>Eco Route Planner</h3>
+        <span class="badge green">Reduce emissions by up to 25%</span>
+        <p>Find the most environmentally friendly routes with real-time CO₂ emission estimates.</p>
+        <a href="#" class="link">Get Started →</a>
+      </div>
+      <div class="card">
+        <div class="icon blue">📊</div>
+        <h3>Sustainability Dashboard</h3>
+        <span class="badge blue">Real-time analytics</span>
+        <p>Track your carbon footprint, visualize emissions data, and monitor sustainability scores.</p>
+        <a href="#" class="link">Get Started →</a>
+      </div>
+      <div class="card">
+        <div class="icon green">⬆️</div>
+        <h3>Data Upload</h3>
+        <span class="badge green">CSV & manual input</span>
+        <p>Upload energy and fuel usage data for comprehensive carbon analysis.</p>
+        <a href="#" class="link">Get Started →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Route Planner Section -->
+  <section class="planner">
+    <h2>Plan Your Route</h2>
+    <p>Enter your source and destination to find eco-friendly route options</p>
+    <form id="routeForm">
+      <div class="form-group">
+        <label>Starting Point</label>
+        <input type="text" id="start" placeholder="e.g., Karnataka" required />
+      </div>
+      <div class="form-group">
+        <label>Destination</label>
+        <input type="text" id="end" placeholder="e.g., Andhra Pradesh" required />
+      </div>
+      <button type="submit" class="btn primary">Find Eco Routes</button>
+    </form>
+
+    <div class="results">
+      <div id="map">Loading map...</div>
+      <div class="route-info">
+        <h3>Eco Highway Route <span class="badge green-outline">Greenest Route</span></h3>
+        <ul>
+          <li><b>Distance:</b> 12.5 km</li>
+          <li><b>Duration:</b> 18 min</li>
+          <li><b>CO₂:</b> 2.8 kg</li>
+          <li><b>Fuel:</b> 1.2 L</li>
+        </ul>
+        <div class="savings">
+          <h4>🌿 Environmental Savings</h4>
+          <p><b>CO₂ Saved:</b> 0.7 kg</p>
+          <p><b>Fuel Saved:</b> 0.3 L</p>
+          <p><b>Cost Saved:</b> $1.05</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
